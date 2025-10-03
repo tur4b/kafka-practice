@@ -15,7 +15,7 @@ public class TestController {
 
     @GetMapping
     public String test() {
-        kafkaTemplate.send("test", "test-key", "test-value");
+        kafkaTemplate.send("tests", "test-key", "test-value");
         return "test";
     }
 }
